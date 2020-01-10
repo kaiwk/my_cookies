@@ -3,16 +3,16 @@ from setuptools import setup
 setup(
     name="my_cookies",
     packages=["my_cookies"],
-    version="0.1",
+    version="0.1.1",
     license="MIT",
     description="Retrieve chrome cookies",
     author="Wang Kai",
     author_email="kaiwkx@gmail.com",
     url="https://github.com/kaiwk/my_cookies",
     download_url="https://github.com/kaiwk/my_cookies",
-    keywords=["chrome", "cookies"],
+    keywords=["browser", "cookies"],
     scripts=['bin/my_cookies'],
-    install_requires=["pycryptodome", "keyring"],
+    install_requires=["browser_cookie3"],
     classifiers=[
         # Chose either "3 - Alpha", "4 - Beta", or "5 - Production/Stable"
         "Development Status :: 3 - Alpha",
