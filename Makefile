@@ -5,6 +5,7 @@ help:
 	@echo "run			run my_cookies installed in current python env"
 	@echo "package			build package"
 	@echo "upload			upload package"
+	@echo "clean			clean builds"
 
 install:
 	pip install -e .
@@ -17,3 +18,8 @@ package:
 
 upload:
 	@twine upload --verbose dist/*
+
+clean:
+	@rm -rf dist/
+	@rm -rf build/
+	@rm -rf *egg-info/
