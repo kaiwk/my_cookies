@@ -17,6 +17,12 @@ def main():
             cookiejar = browser_cookie3.firefox(domain_name="leetcode.com")
         except Exception:
             print("get cookie from Firefox failed", file=sys.stderr)
+
+    if not cookiejar:
+        try:
+            cookiejar = browser_cookie3.edge(domain_name="leetcode.com")
+        except Exception:
+            print("get cookie from Microsoft Edge failed", file=sys.stderr)
             return
 
     leetcode_cookies = list(filter(lambda c: c.name in ("LEETCODE_SESSION", "csrftoken"), cookiejar))
