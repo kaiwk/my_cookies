@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name="my_cookies",
     packages=["my_cookies"],
-    version="0.1.1",
+    version="0.1.2",
     license="MIT",
     description="Retrieve chrome cookies",
     author="Wang Kai",
@@ -11,7 +11,7 @@ setup(
     url="https://github.com/kaiwk/my_cookies",
     download_url="https://github.com/kaiwk/my_cookies",
     keywords=["browser", "cookies"],
-    scripts=['bin/my_cookies'],
+    scripts=["bin/my_cookies"],
     install_requires=["browser_cookie3"],
     classifiers=[
         # Chose either "3 - Alpha", "4 - Beta", or "5 - Production/Stable"
