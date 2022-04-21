@@ -8,20 +8,27 @@ def main():
     """Print cookies."""
     cookiejar = None
 
+    domain_name = "leetcode.com"
+    if len(sys.argv) >= 2:
+        if sys.argv[1] == "cn":
+            domain_name = "leetcode-cn.com"
+        else:
+            domain_name = sys.argv[1]
+
     try:
-        cookiejar = browser_cookie3.chrome(domain_name="leetcode.com")
+        cookiejar = browser_cookie3.chrome(domain_name=domain_name)
     except Exception:
         print("get cookie from Chrome failed", file=sys.stderr)
 
     if not cookiejar:
         try:
-            cookiejar = browser_cookie3.firefox(domain_name="leetcode.com")
+            cookiejar = browser_cookie3.firefox(domain_name=domain_name)
         except Exception:
             print("get cookie from Firefox failed", file=sys.stderr)
 
     if not cookiejar:
         try:
-            cookiejar = browser_cookie3.edge(domain_name="leetcode.com")
+            cookiejar = browser_cookie3.edge(domain_name=domain_name)
         except Exception:
             print("get cookie from Microsoft Edge failed", file=sys.stderr)
             return
