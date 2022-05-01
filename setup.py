@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name="my_cookies",
     packages=["my_cookies"],
-    version="0.1.2",
+    version="0.1.3",
     license="MIT",
     description="Retrieve chrome cookies",
     author="Wang Kai",
