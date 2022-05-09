@@ -11,7 +11,7 @@ def main():
     domain_name = "leetcode.com"
     if len(sys.argv) >= 2:
         if sys.argv[1] == "cn":
-            domain_name = "leetcode-cn.com"
+            domain_name = "leetcode.cn"
         else:
             domain_name = sys.argv[1]
 
