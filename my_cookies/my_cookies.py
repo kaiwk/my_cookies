@@ -27,6 +27,7 @@ def retrieve_cookies(domain_name, keys):
         "Chrome": browser_cookie3.chrome,
         "Chromium": browser_cookie3.chromium,
         "Brave": browser_cookie3.brave,
+        "Librewolf": browser_cookie3.librewolf,
         "Firefox": browser_cookie3.firefox,
         "Edge": browser_cookie3.edge,
         "Vivaldi": browser_cookie3.vivaldi,
@@ -45,7 +46,7 @@ def retrieve_cookies(domain_name, keys):
                   file=sys.stderr)
 
     if not cookiejar or len(cookiejar) == 0:
-        print("Get cookie failed, make sure you have Chrome, Chromium, Brave, "
+        print("Get cookie failed, make sure you have Chrome, Chromium, Brave, Librewolf, "
               "Firefox or Edge installed and login in LeetCode with one of them at "
               "least once.")
         return
